@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "197864655061",
+    "firebase_url": "https://chatonlineflt.firebaseio.com",
+    "project_id": "chatonlineflt",
+    "storage_bucket": "chatonlineflt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197864655061:android:8a7763bbf30bf01b103a5c",
+        "android_client_info": {
+          "package_name": "br.com.isaiasbass.chat_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197864655061-f7inhf7gm5ul3cje7rkhn785aj8t0ihn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.isaiasbass.chat_firebase",
+            "certificate_hash": "c2a76d59f00fa4146ea7aa4492fb77b3260c7517"
+          }
+        },
+        {
+          "client_id": "197864655061-4pjeu21founv5729lu0kivb6auvegnvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnx3ZESvoTcLkYW48L3fCNdOZQRnVUREo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197864655061-4pjeu21founv5729lu0kivb6auvegnvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,8 +11,9 @@ App Chat On-Line
 
 ### Tecnologias utilizadas:
 
-- sqflite
-- url_launcher
+- firebase firestore
+- firebase storage
+- google_sign_in
 - image_picker
 
 ![screen](/imgs/screen01.png)

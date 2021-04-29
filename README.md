@@ -1,16 +1,47 @@
-# app07_chat_firebase
+# App Chat Online com Google Firebase
+#### App desenvolvido como requisito do curso [Criação de Apps Android e iOS com Flutter - Daniel Ciolfi](https://www.udemy.com/course/curso-completo-flutter-app-android-ios/)
 
-A new Flutter project.
+<br>
 
-## Getting Started
+App Chat On-Line
+- Utiliza BD Firebase Firestore
+- Firebase Storage para imagens
+- Login Google
+- Câmera do Telefone.
 
-This project is a starting point for a Flutter application.
+### Tecnologias utilizadas:
 
-A few resources to get you started if this is your first Flutter project:
+- sqflite
+- url_launcher
+- image_picker
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![screen](/imgs/screen01.png) ![screen](/imgs/screen02.png) ![screen](/imgs/screen03.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br>
+
+💬 [Meu linkedin](https://www.linkedin.com/in/isaias-gon%C3%A7alves-igs/)
+
+<hr>
+
+##### Outros Projetos Flutter:
+###### [DevQuiz #NLW5 RocketSeat](https://github.com/IsaBass/nlw5_devquiz) (SetState, ValueNotifier, AnimationBuilder, share_plus)
+###### [Buscador de gifs](https://github.com/IsaBass/buscador_gifs) (share, http, transparent_image)
+###### [To-Do_Offline](https://github.com/IsaBass/todo_offline) (path_provider, json)
+###### [Conversor de Moedas](https://github.com/IsaBass/conversor_moedas) (Dio, http)
+###### [Calculadora IMC](https://github.com/IsaBass/calcIMC) (SetState)
+
+
+
+
+
+<!--
+## Meus Projetos Flutter:
+#### [DevQuiz #NLW5 RocketSeat](https://github.com/IsaBass/nlw5_devquiz)
+- projeto da 5ª NLW , trilha Flutter
+- SetState, ValueNotifier, AnimationBuilder, shared_plus
+<!--
+#### [Calculadora IMC](https://github.com/IsaBass/calcIMC)
+- projeto inicial de aprendizado
+- SetState
+-->
+

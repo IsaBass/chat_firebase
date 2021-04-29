@@ -26,8 +26,12 @@ Future<Null> ensureLoggedIn() async {
   if (await auth.currentUser() == null) {
     GoogleSignInAuthentication crredentials =
         await googleSignIn.currentUser.authentication;
-    await auth.signInWithCredential(GoogleAuthProvider.getCredential(
-        idToken: crredentials.idToken, accessToken: crredentials.accessToken));
+    await auth.signInWithCredential(
+      GoogleAuthProvider.getCredential(
+        idToken: crredentials.idToken,
+        accessToken: crredentials.accessToken,
+      ),
+    );
   }
 }
 
@@ -79,11 +83,12 @@ class _ChatScreenState extends State<ChatScreen> {
         body: Column(
           children: <Widget>[
             Expanded(
-              child: StreamBuilder(
+              child: StreamBuilder<QuerySnapshot>(
                 stream: firestoreInstance
                     .collection("messages")
                     .orderBy("senderDate")
-                    .getDocuments().asStream(),
+                    .getDocuments()
+                    .asStream(),
                 builder: (context, snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.none:
@@ -96,7 +101,8 @@ class _ChatScreenState extends State<ChatScreen> {
                         reverse: true,
                         itemCount: snapshot.data.docs.length,
                         itemBuilder: (context, index) {
-                          List r = snapshot.data.docs.reversed.toList();
+                          List<DocumentSnapshot> r =
+                              snapshot.data.docs.reversed.toList();
                           return ChatMessage(r[index].data);
                         },
                       );
@@ -131,15 +137,14 @@ class ChatMessage extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(right: 16.0),
             child: CircleAvatar(
-              backgroundImage: NetworkImage(data["senderPhotoUrl"]),
-            ),
+                backgroundImage: NetworkImage(data["senderPhotoUrl"])),
           ),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(data["senderName"],
-                    style: Theme.of(context).textTheme.subhead),
+                    style: Theme.of(context).textTheme.subtitle1),
                 Container(
                   margin: const EdgeInsets.only(top: 5.0),
                   child: data["imgUrl"] != null

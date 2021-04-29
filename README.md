@@ -15,7 +15,7 @@ App Chat On-Line
 - url_launcher
 - image_picker
 
-![screen](/imgs/screen01.png) ![screen](/imgs/screen02.png) ![screen](/imgs/screen03.png)
+![screen](/imgs/screen01.png)
 
 <br>
 
